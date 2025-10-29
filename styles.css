@@ -36,11 +36,9 @@ a {
   text-decoration: none;
 }
 
-ul li {  
+ul li {
   margin-bottom: 7px;
 }
-
- 
 
 /* Submenu animation  */
 
@@ -51,12 +49,17 @@ ul li {
 }
 
 .submenu-show {
-  height: 120px; 
+  height: 130px;
 }
 
+a ~ ul {
+  width: fit-content;
+}
 
- 
+a ~ ul li {
+  padding: 5px;
+}
 
-a ~ ul li a:hover {
-  background-color: rgb(245, 191, 250);   
+a ~ ul li:hover {
+  background-color: rgb(252, 219, 255);
 }
