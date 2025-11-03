@@ -1,0 +1,65 @@
+/* General page configuration  */
+
+body {
+  padding: 15px;
+}
+
+ul {
+  list-style-type: none;
+}
+
+header {
+  text-align: center;
+  margin-bottom: 42px;
+}
+
+div#content {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 35px;
+}
+
+#main {
+  width: 50%;
+}
+
+#sidebar {
+  width: 20%;
+}
+
+li.special {
+  margin-bottom: 19px;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul li {
+  margin-bottom: 7px;
+}
+
+/* Submenu animation  */
+
+.submenu-hide {
+  height: 0px;
+  overflow: hidden;
+  transition: height 0.5s ease;
+}
+
+.submenu-show {
+  height: 130px;
+}
+
+a ~ ul {
+  width: fit-content;
+}
+
+a ~ ul li {
+  padding: 5px;
+}
+
+a ~ ul li:hover {
+  background-color: rgb(252, 219, 255);
+}
